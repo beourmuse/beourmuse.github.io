@@ -1,0 +1,79 @@
+.hamburger {
+  padding: 20px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  .hamburger:hover .hamburger-inner .hamburger-line-1 {
+    width: 30px;
+    transition: width 500ms; }
+  .hamburger:hover .hamburger-inner .hamburger-line-2 {
+    width: 30px;
+    transition: width 500ms; }
+  .hamburger:hover .hamburger-inner .hamburger-line-3 {
+    width: 30px;
+    transition: width 500ms; }
+  .hamburger.is-active .hamburger-inner {
+    transform: rotate(45deg);
+    transition-delay: 0.12s;
+    float: right;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+    .hamburger.is-active .hamburger-inner .hamburger-line-1 {
+      opacity: 0;
+      transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+      width: 30px; }
+    .hamburger.is-active .hamburger-inner .hamburger-line-2 {
+      width: 30px;
+      transition: cubic-bezier(0.215, 0.61, 0.355, 1); }
+    .hamburger.is-active .hamburger-inner .hamburger-line-3 {
+      transform: rotate(-90deg);
+      margin-top: -6px;
+      transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+      width: 30px; }
+
+.hamburger-box {
+  width: 30px;
+  display: inline-block;
+  height: 30px; }
+
+.hamburger-inner {
+  transition-duration: 0.075s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  .hamburger-inner .hamburger-line-1 {
+    transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+    width: 40px;
+    border-radius: 4px;
+    transition: width 500ms;
+    margin: 4px;
+    background-color: #000;
+    height: 2px;
+    float: right; }
+  .hamburger-inner .hamburger-line-2 {
+    width: 20px;
+    transition: width 500ms;
+    background-color: #000;
+    border-radius: 4px;
+    height: 2px;
+    margin: 4px;
+    float: right; }
+  .hamburger-inner .hamburger-line-3 {
+    height: 2px;
+    background-color: #000;
+    border-radius: 4px;
+    transition: width 500ms;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+    transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    width: 30px;
+    height: 2px;
+    margin: 4px;
+    float: right; }
