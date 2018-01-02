@@ -4,14 +4,14 @@
     $('.menu>li').slice(-2).addClass('last-elements');
 
 
-    $(window).on('scroll', function() {
-        var scroll = $(window).scrollTop();
-        if (scroll < 245) {
-            $(".header-sticky").removeClass("sticky");
-        } else {
-            $(".header-sticky").addClass("sticky");
-        }
-    });
+    // $(window).on('scroll', function() {
+    //     var scroll = $(window).scrollTop();
+    //     if (scroll < 200) {
+    //         $(".header-sticky").removeClass("sticky");
+    //     } else {
+    //         $(".header-sticky").addClass("sticky");
+    //     }
+    // });
 
     $('.grid').imagesLoaded(function() {
 
