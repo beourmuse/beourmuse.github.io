@@ -108,13 +108,13 @@
         <div class="content-container">
             <div class="row">
                 <div class="portfolio-img col-xs-12 col-sm-12 col-md-12">
-                        <img data-src="/img/projects/project_8/1000.jpg" width="1299" height="866" alt="Some description" src="" class="lazy"/>
+                    <img width="1299" height="866" alt="Some description" src="/img/projects/project_8/1000.jpg" class="lazy"/>
                 </div>
                 <div class="portfolio-img col-xs-12 col-sm-12 col-md-12">
-                        <img data-src="/img/projects/project_8/2000.jpg" width="1299" height="866" alt="Some description" src="" class="lazy"/>
+                    <img data-src="/img/projects/project_8/2000.jpg" width="1299" height="866" alt="Some description" src="" class="lazy"/>
                 </div>
                 <div class="portfolio-img col-xs-12 col-sm-12 col-md-12">
-                        <img data-src="/img/projects/project_8/3000.jpg" width="1299" height="862" alt="Some description" src="" class="lazy"/>
+                    <img data-src="/img/projects/project_8/3000.jpg" width="1299" height="862" alt="Some description" src="" class="lazy"/>
                 </div>
             </div>
         </div>
@@ -161,7 +161,7 @@
         $(function() {
             $('.lazy').Lazy({
                 scrollDirection: 'vertical',
-                visibleOnly: true,
+                visibleOnly: false,
                 onError: function(element) {
                     console.warn('error loading ' + element.data('src'));
                 },
