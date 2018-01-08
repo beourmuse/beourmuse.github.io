@@ -69,11 +69,6 @@ NOTE: This is Footer style file. All footer related style included in this file.
     width: 30px;
 }
 
-.social-icon a:hover {
-    background: #464646;
-    color: #fff
-}
-
 .footer-4 .footer-logo {
     display: inline-block;
     float: left;
