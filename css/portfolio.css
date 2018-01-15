@@ -102,9 +102,12 @@ NOTE: This is Slider style file. All Slider related style included in this file.
     transform: translateY(0px);
 }
 
-.view-more {}
+.next-button {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
 
-.view-more a {
+.next-button a {
     border: 1px solid #ddd;
     display: inline-block;
     font-size: 14px;
@@ -113,7 +116,7 @@ NOTE: This is Slider style file. All Slider related style included in this file.
     text-transform: uppercase;
 }
 
-.view-more a:hover {
+.next-button a:hover {
     background: #444;
     color: #fff;
     border-color: #444

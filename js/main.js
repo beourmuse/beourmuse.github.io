@@ -26,7 +26,7 @@
             itemSelector: '.grid-item',
             percentPosition: true,
             layoutMode: 'fitRows',
-            sortBy: 'original-order',
+            sortBy: 'original-order'
         });
     });
 
