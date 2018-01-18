@@ -185,7 +185,13 @@
 /* small mobile :320px. */
 
 @media (max-width: 767px) {
-    /* .container {width:300px} */
+    body {
+        margin-bottom: 120px;
+    }
+    .main-image {
+        padding-top: 450px;
+        padding-bottom: 100px;
+    }
     .header-position {
         position: static;
     }
@@ -458,6 +464,9 @@
         text-shadow: #464646 0.1em 0.1em 0.2em;
         font-size: 30px;
     }
+    .ah-headline.type .ah-words-wrapper.selected b {
+        color: white;
+    }
     .bg-img {
         background: url("../img/bg/main_image_small.jpg") repeat scroll right top / cover;
     }
@@ -467,12 +476,12 @@
 /* Large Mobile :480px. */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+    body {
+        margin-bottom: 120px;
+    }
     .content-container {
         width: 450px
     }
-    /* .wrapper {
-        padding: 0 50px;
-    } */
     .blog-meta>span {
         padding-right: 20px;
     }

@@ -102,12 +102,12 @@ NOTE: This is Slider style file. All Slider related style included in this file.
     transform: translateY(0px);
 }
 
-.next-button {
+.np-button {
     margin-top: 10px;
     margin-bottom: 25px;
 }
 
-.next-button a {
+.np-button a {
     border: 1px solid #ddd;
     display: inline-block;
     font-size: 14px;
@@ -116,7 +116,7 @@ NOTE: This is Slider style file. All Slider related style included in this file.
     text-transform: uppercase;
 }
 
-.next-button a:hover {
+.np-button a:hover {
     background: #444;
     color: #fff;
     border-color: #444
@@ -373,6 +373,11 @@ NOTE: This is Slider style file. All Slider related style included in this file.
 .portfolio-details p {
     font-size: 16px;
     line-height: 150%;
+}
+
+.portfolio-details {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 h1.project-title {

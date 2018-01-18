@@ -45,6 +45,11 @@ body {
     height: 65px;
 }
 
+.main-image {
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
 .bg-img {
     background: url("../img/bg/main_image.jpg") repeat scroll right top / cover;
 }
@@ -55,7 +60,7 @@ body {
 }
 
 .ah-headline.type .ah-words-wrapper.selected {
-    background-color: inherit;
+    background-color: initial;
 }
 
 .heading-sub-title>span {
