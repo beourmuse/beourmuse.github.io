@@ -186,7 +186,7 @@
 
 @media (max-width: 767px) {
     body {
-        margin-bottom: 120px;
+        margin-bottom: 130px;
     }
     .main-image {
         padding-top: 450px;
@@ -470,6 +470,73 @@
     .bg-img {
         background: url("../img/bg/main_image_small.jpg") repeat scroll right top / cover;
     }
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        opacity: 0;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 1.0);
+        overflow-x: hidden;
+    }
+    .menu {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    ul.menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .overlay a {
+        padding: 8px;
+        opacity: 0;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        opacity: 0.25;
+    }
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #f1f1f1;
+    }
+    .main-menu ul li {
+        display: block;
+    }
+    .main-menu ul li a {
+        font-size: 25px;
+        opacity: 1;
+    }
+    .menu-style-toggle nav {
+        float: none;
+    }
+    .main-menu {
+        margin-top: 0;
+        transform: translate(0%, 50%);
+    }
+    .main-menu.mean-menu.menu-style-toggle.text-right {
+        float: none;
+    }
+    .creator {
+        text-align: center;
+    }
+    .copyright p {
+        line-height: normal;
+    }
 }
 
 
@@ -477,7 +544,7 @@
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     body {
-        margin-bottom: 120px;
+        margin-bottom: 130px;
     }
     .content-container {
         width: 450px
@@ -500,5 +567,14 @@
     .footer-4 .social-icon a {
         float: left;
         margin: 0 17px 0 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-bottom {
+        padding: 0 0;
+    }
+    .copyright p {
+        margin: 10px 0 10px;
     }
 }

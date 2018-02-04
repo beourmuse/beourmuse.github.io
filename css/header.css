@@ -258,3 +258,7 @@ NOTE: This is Header style file. All Header related style included in this file.
 .no-padding {
     padding: 0;
 }
+
+.hamburger-wrapper {
+    z-index: 99999999;
+}

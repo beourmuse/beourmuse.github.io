@@ -1,11 +1,11 @@
 /*!
- * imagesLoaded PACKAGED v4.1.3
+ * imagesLoaded PACKAGED v4.1.1
  * JavaScript is all like "You images are done yet or what?"
  * MIT License
  */
 
 /**
- * EvEmitter v1.1.0
+ * EvEmitter v1.0.3
  * Lil' event emitter
  * MIT License
  */
@@ -110,18 +110,12 @@ proto.emitEvent = function( eventName, args ) {
   return this;
 };
 
-proto.allOff =
-proto.removeAllListeners = function() {
-  delete this._events;
-  delete this._onceEvents;
-};
-
 return EvEmitter;
 
 }));
 
 /*!
- * imagesLoaded v4.1.3
+ * imagesLoaded v4.1.1
  * JavaScript is all like "You images are done yet or what?"
  * MIT License
  */
@@ -152,7 +146,7 @@ return EvEmitter;
     );
   }
 
-})( typeof window !== 'undefined' ? window : this,
+})( window,
 
 // --------------------------  factory -------------------------- //
 
