@@ -516,6 +516,7 @@
     }
     .main-menu ul li {
         display: block;
+        margin-left: 0px;
     }
     .main-menu ul li a {
         font-size: 25px;
