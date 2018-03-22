@@ -373,6 +373,12 @@ NOTE: This is Slider style file. All Slider related style included in this file.
 .portfolio-details p {
     font-size: 16px;
     line-height: 150%;
+    text-align: center;
+    color: #999999
+}
+
+.portfolio-details h4 {
+    text-align: center;
 }
 
 .portfolio-details {

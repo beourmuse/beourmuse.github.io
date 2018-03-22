@@ -28,18 +28,322 @@ body {
     margin-bottom: 100px;
 }
 
+@font-face {
+    font-family: 'Garamondpremrpro ltdisp';
+    src: url('../fonts/GaramondPremrPro-LtDisp.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'AbrilFatface Regular';
+    src: url('../fonts/AbrilFatface-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Garamondpremrpro ltitdisp';
+    src: url('../fonts/GaramondPremrPro-LtItDisp.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'Acuminpro light';
+    src: url('../fonts/acuminpro-light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Acuminpro regular';
+    src: url('../fonts/acuminpro-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.w-button {
+    display: inline-block;
+    padding: 9px 15px;
+    background-color: #3898EC;
+    color: #fff;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.vid-main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.scroll-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4%;
+    display: block;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Acuminpro regular',sans-serif;
+    color: rgba(0,0,0,.5);
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cat-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 7%;
+    z-index: 99;
+    display: block;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Garamondpremrpro ltdisp','Palatino Linotype',sans-serif;
+    color: #000;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 12px;
+    text-indent: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.home-main, .instagram {
+    position: fixed;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+
+.contact-link, .copyrights, .instagram {
+    letter-spacing: 3px;
+}
+
+.black-nav-button {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 600;
+    display: block;
+}
+
+.logo-line {
+    left: 171px;
+    top: 46px;
+    width: 40px;
+    height: 1px;
+}
+
+.copyrights, .logo {
+    z-index: 99;
+    font-family: 'Acuminpro regular',sans-serif;
+    color: rgba(0,0,0,.95);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.instagram {
+    right: -3px;
+    bottom: 226px;
+    z-index: 99;
+    width: 120px;
+    margin-left: 0;
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    font-family: 'Acuminpro regular',sans-serif;
+    color: rgba(0,0,0,.95);
+    font-size: 11px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.insta-line {
+    right: 55px;
+    bottom: 143px;
+    width: 1px;
+    height: 40px;
+    color: rgba(51,51,51,.6);
+}
+
+.insta-line, .logo-line {
+    background-color: rgba(0,0,0,.6);
+    z-index: 99;
+    position: fixed;
+}
+
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.logo {
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    background-color: transparent;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-decoration: none;
+}
+
+.logo-image {
+    width: 130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-wrapper {
+    width: 80%;
+    height: 55vh;
+    margin-top: 15px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-image-byline p {
+    line-height: 100%;
+    font-family: 'AbrilFatface Regular', sans-serif;
+    color: #000;
+    margin-bottom: 35px;
+    width: 600px;
+    line-height: 1.2;
+}
+
+.main-title-box p {
+    font-size: 24px;
+    margin: 0;
+    font-family: 'Acuminpro regular',sans-serif;
+    color: white;
+}
+
+.main-title-box {
+    background-color: black;
+    padding-top: 12px;
+    margin-left: -90px;
+    padding-bottom: 12px;
+    width: 720px;
+    padding-left: 90px;
+    padding-right: 10px;
+    line-height: 1;
+}
+
+.main-image-byline {
+    position: absolute;
+    bottom: 100px;
+    font-size: 42px;
+    width: 600px;
+    color: white;
+    margin-left: 25px;
+}
+
+.beauty-main {
+    background-image: linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0)),url("../img/bg/full_image.jpg");
+    background-repeat: repeat,no-repeat;
+    background-size: auto,cover;
+    width: 100%;
+    height: 100%;
+    background-position: 0 0,50% 50%;
+}
+
+.close-button-black {
+    position: fixed;
+    left: 14px;
+    top: 141px;
+    background-color: transparent;
+    transform: rotate(-90deg);
+    color: rgba(0,0,0,.95);
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.close-line-black {
+    position: fixed;
+    left: 52px;
+    top: 200px;
+    z-index: 99;
+    width: 1px;
+    height: 40px;
+    background-color: rgba(0,0,0,.6);
+}
+
+.close-button-black, .close-button-white {
+    font-family: 'Acuminpro regular',sans-serif;
+    z-index: 99;
+    text-transform: uppercase;
+}
+
+.rectangle {
+    height: 475px;
+    width: 130px;
+    background-color: #FFF5F6;
+    margin : 0 auto;
+}
+
+.underline {
+    height: 4px;
+    width: 130px;
+    background-color: #FFF5F6;
+    margin : 0 auto;
+}
+
+.work-title {
+    margin-top: 140px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#mission {
+    position: relative;
+    margin-top: 125px;
+}
+
+.mission-title {
+    position: absolute;
+    top: 155px;
+    left: 50%;
+    font-size: 40px;
+    margin-left: -125px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.mission-text {
+    position: absolute;
+    top: 275px;
+    width: 716px;
+    left: 50%;
+    font-size: 24px;
+    margin-left: -363px;
+    text-align: center;
+}
+
 
 /*----------------------------------------*/
 
 
 /*  1.  Theme default CSS
 /*----------------------------------------*/
-
-.logo {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    line-height: 0;
-}
 
 .header {
     height: 65px;
@@ -48,10 +352,6 @@ body {
 .main-image {
     padding-top: 300px;
     padding-bottom: 300px;
-}
-
-.bg-img {
-    background: url("../img/bg/main_image.jpg") repeat scroll right top / cover;
 }
 
 .ah-headline.type i {
@@ -130,19 +430,31 @@ body {
 .hover-style {
     display: block;
     position: relative;
+    animation: down-bump 0.4s ease;
 }
 
 .hover-style::before {
     background: #fff none repeat scroll 0 0;
     content: "";
     height: 100%;
-    left: 0;
     opacity: 0;
     position: absolute;
-    top: 0;
     transition: all 0.3s ease-in-out 0s;
     width: 100%;
+    animation: up-bump 0.4s ease;
 }
+
+@keyframes up-bump {
+    0% { margin-top: 2em; }
+    50% { margin-top: 1.5em; }
+    100% { margin-top: 2em; }
+  }
+  @keyframes down-bump {
+    0% { margin-top: 2em; }
+    50% { margin-top: 2.5em; }
+    100% { margin-top: 2em; }
+  }
+
 
 .hover-style:hover::before {
     opacity: 0.95;
@@ -451,7 +763,7 @@ input:-webkit-autofill {
 
 #toTop {
     text-align: center;
-    bottom: 35px;
+    bottom: 50px;
     cursor: pointer;
     display: none;
     position: fixed;

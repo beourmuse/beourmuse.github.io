@@ -12,20 +12,6 @@ NOTE: This is Header style file. All Header related style included in this file.
     z-index: 9;
 }
 
-.header-area {}
-
-.logo {
-    margin-top: 24px;
-}
-
-.logo a {
-    color: #222;
-    font-family: "Dosis", sans-serif;
-    font-size: 0;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
 .main-menu ul {}
 
 .main-menu ul li {
@@ -214,8 +200,10 @@ NOTE: This is Header style file. All Header related style included in this file.
 /* Main Menu */
 
 .main-menu {
-    padding: 0;
-    margin-top: 9px;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .menu-style-toggle {}

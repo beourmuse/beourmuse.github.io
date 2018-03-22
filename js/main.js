@@ -97,8 +97,10 @@
     $(window).on('scroll', function() {
         if ($(window).scrollTop() > 200) {
             $("#toTop").fadeIn();
+            $(".scroll-text").fadeOut();
         } else {
             $("#toTop").fadeOut();
+            $(".scroll-text").fadeIn();
         }
     });
     $('#toTop').on('click', function() {
