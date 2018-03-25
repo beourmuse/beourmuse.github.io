@@ -40,12 +40,14 @@
     ------------------------*/
     $('.menu-toggle').on('click', function() {
         if ($('.menu-toggle').hasClass('is-active')) {
+            $('.logo-image').css("opacity", 1.0);
             if ($(document).width() < 768) {
                 $('.overlay').css("width", "0%");
                 $('.overlay').css("opacity", 0);
             }
             $('.main-menu nav').removeClass('menu-open');
         } else {
+            $('.logo-image').css("opacity", 0.1);
             $('.main-menu nav').addClass('menu-open');
             if ($(document).width() < 768) {
                 $('.overlay').css("width", "100%");
@@ -95,12 +97,11 @@
         scrollUp
     ---------------------------- */
     $(window).on('scroll', function() {
+        $(".scroll-text").fadeOut();
         if ($(window).scrollTop() > 200) {
             $("#toTop").fadeIn();
-            $(".scroll-text").fadeOut();
         } else {
             $("#toTop").fadeOut();
-            $(".scroll-text").fadeIn();
         }
     });
     $('#toTop').on('click', function() {

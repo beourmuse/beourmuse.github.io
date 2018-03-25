@@ -204,6 +204,7 @@ NOTE: This is Header style file. All Header related style included in this file.
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
+    z-index: 1;
 }
 
 .menu-style-toggle {}
