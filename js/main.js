@@ -59,7 +59,6 @@
     ------------------------*/
     $('.menu-toggle').on('click', function() {
         if ($('.menu-toggle').hasClass('is-active')) {
-            $('.logo-image').css("opacity", 1.0);
             if ($('.main-menu nav').hasClass('nav-menu-open')) {
                 $('.overlay').css("width", "0%");
                 $('.overlay').css("opacity", 0);
@@ -68,9 +67,8 @@
             }
             $('.main-menu nav').removeClass('menu-open');
         } else {
-            $('.logo-image').css("opacity", 0.1);
             $('.main-menu nav').addClass('menu-open');
-            if ($(document).width() < 768) {
+            if ($(document).width() <= 768) {
                 $('.main-menu nav').addClass('nav-menu-open');
                 $('.overlay').css("width", "100%");
                 $('.overlay').css("opacity", 1);
@@ -80,13 +78,25 @@
     });
 
     $('.menu-item').on('click', function() {
-        if ($('.overlay').css("opacity") == 1 && $(document).width() < 768) {
+        if ($('.overlay').css("opacity") == 1 && $(document).width() <= 768) {
             $('.overlay').css("opacity", 0);
             $('.overlay').css("width", "0%");
             if ($('.menu-toggle').hasClass('is-active')) {
                 $('.menu-toggle').removeClass('is-active');
             }
         }
+    });
+
+    // Reset menu on window resize
+    var resizeTimer;
+    $(window).on('resize', function(e) {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+            $(".overlay").removeAttr("style");
+            $('.menu-toggle').removeClass('is-active');
+            $('.main-menu nav').removeClass('nav-menu-open');
+            $('.main-menu nav').removeClass('menu-open');
+        }, 250);
     });
 
     /*--
@@ -114,7 +124,6 @@
             }, false);
         });
     }
-
 
     /*--------------------------
         scrollUp
