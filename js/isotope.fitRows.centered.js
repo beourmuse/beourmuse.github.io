@@ -2,27 +2,11 @@
 
 (function (window, factory) {
     'use strict';
-    // universal module definition
-    if (typeof define === 'function' && define.amd) {
-        // AMD
-        define([
-            'get-size/get-size',
-            'isotope/js/layout-mode'
-        ],
-          factory);
-    } else if (typeof module == 'object' && module.exports) {
-        // CommonJS
-        module.exports = factory(
-          require('get-size'),
-          require('isotope-layout/js/layout-mode')
-        );
-    } else {
-        // browser global
-        factory(
-          window.getSize,
-          window.Isotope.LayoutMode
-        );
-    }
+
+    factory(
+        window.getSize,
+        window.Isotope.LayoutMode
+    );
 
 }(window, function factory(getSize, LayoutMode) {
     'use strict';

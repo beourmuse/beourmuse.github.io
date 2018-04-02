@@ -64,12 +64,14 @@
                 $('.overlay').css("opacity", 0);
                 $('.overlay').css("z-index", 1);
                 $('.main-menu nav').removeClass('nav-menu-open');
+                $('.main-menu').removeClass('overlay');
             }
             $('.main-menu nav').removeClass('menu-open');
         } else {
             $('.main-menu nav').addClass('menu-open');
             if ($(document).width() <= 768) {
                 $('.main-menu nav').addClass('nav-menu-open');
+                $('.main-menu').addClass('overlay');
                 $('.overlay').css("width", "100%");
                 $('.overlay').css("opacity", 1);
                 $('.overlay').css("z-index", 100);
@@ -96,6 +98,7 @@
             $('.menu-toggle').removeClass('is-active');
             $('.main-menu nav').removeClass('nav-menu-open');
             $('.main-menu nav').removeClass('menu-open');
+            $('.main-menu').removeClass('overlay');
         }, 250);
     });
 
