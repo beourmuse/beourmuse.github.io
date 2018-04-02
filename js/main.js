@@ -20,11 +20,11 @@
             $grid.isotope({ filter: filterValue });
         });
 
-        // init Isotope
+        // init Isotope grid for projects
         var $grid = $('.grid').isotope({
             itemSelector: '.grid-item',
             percentPosition: true,
-            layoutMode: 'fitRows',
+            layoutMode: 'fitRowsCentered',
             sortBy: 'original-order'
         });
     });
@@ -35,23 +35,46 @@
         event.preventDefault();
     });
 
+    // Populate the HTML for instagram posts
+    var jqxhr = $.ajax( "https://www.instagram.com/TOTIMEA/?__a=1" ).done(function() {
+    }).fail(function() {
+        //alert( "error" );
+    }).always(function(data) {
+        var items = data.graphql.user.edge_owner_to_timeline_media.edges;
+        var i = 0;
+        $.each(items, function(n, item) {
+            if( i <= 5 ){
+                if (item.node.is_video) {
+                    return true;
+                }
+                var postLink = "<a target='_blank' href='https://www.instagram.com/p/"+item.node.shortcode+"'><div class='col-md-2 col-sm-4 col-xs-4 item'><img class='img-responsive center-block' src='" + item.node.thumbnail_src + "'/></div></a>";
+                $("#instagram-grid").append(postLink);
+            }
+            i++;
+        });
+    });
+
     /*--
     menu-toggle
     ------------------------*/
     $('.menu-toggle').on('click', function() {
         if ($('.menu-toggle').hasClass('is-active')) {
             $('.logo-image').css("opacity", 1.0);
-            if ($(document).width() < 768) {
+            if ($('.main-menu nav').hasClass('nav-menu-open')) {
                 $('.overlay').css("width", "0%");
                 $('.overlay').css("opacity", 0);
+                $('.overlay').css("z-index", 1);
+                $('.main-menu nav').removeClass('nav-menu-open');
             }
             $('.main-menu nav').removeClass('menu-open');
         } else {
             $('.logo-image').css("opacity", 0.1);
             $('.main-menu nav').addClass('menu-open');
             if ($(document).width() < 768) {
+                $('.main-menu nav').addClass('nav-menu-open');
                 $('.overlay').css("width", "100%");
                 $('.overlay').css("opacity", 1);
+                $('.overlay').css("z-index", 100);
             }
         }
     });

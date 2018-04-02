@@ -50,6 +50,9 @@ h2.page-title {
   display: inline-block;
   float: left;
   margin-bottom: 0;
+  font-family: 'DIN Condensed Web Regular', sans-serif;
+  font-size: 35px;
+  letter-spacing: 3px;
 }
 .pattern-bread .breadcrumbs > ul {
   display: inline-block;

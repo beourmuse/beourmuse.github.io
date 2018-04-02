@@ -36,16 +36,16 @@ Please do not change anything here! write in a custom.css file if required!
 *************************/
 @import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700|Lato:300,400,700');
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Adobe Garamond Pro Regular', sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 14px;
-	color:#464646
+	color:#000000
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px;
-  font-family: 'Dosis', sans-serif;
-  color:#464646
+  font-family: 'DIN Condensed Web Regular', sans-serif;
+  color:#171717;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color:inherit;
@@ -184,12 +184,12 @@ textarea {
 *************************/
 .text-blue { color: #4FC1F0; }
 .text-white { color: #fff ;}
-.text-black { color: #363636; }
+.text-black { color: #171717; }
 .text-theme { color: #f10; }
 
 .text-white h1, .text-white p, .text-white h2{ color: #fff; }
 .text-white { color: #fff; }
-.text-black { color: #363636 ;}
+.text-black { color: #171717;}
 .text-theme { color: #f10; }
 /*************************
         Input
@@ -473,7 +473,6 @@ textarea:focus {
 .ptb-200 { padding: 200px 0 }
 .ptb-250 { padding: 250px 0 }
 .ptb-300 { padding: 300px 0 }
-
 
 /***************************
     Page section margin 

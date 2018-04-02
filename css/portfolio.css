@@ -19,8 +19,7 @@ NOTE: This is Slider style file. All Slider related style included in this file.
 .portfolio-menu button {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: 0 none;
-    font-family: "Dosis", sans-serif;
-    font-weight: 600;
+    font-family: "Acuminpro Pro Light", sans-serif;
     letter-spacing: 1px;
     margin: 0 15px;
     padding: 0;
@@ -55,7 +54,6 @@ NOTE: This is Slider style file. All Slider related style included in this file.
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translateY(-50%);
     z-index: 2;
     opacity: 0;
     transition: all 0.3s ease-in-out 0s;
@@ -91,15 +89,6 @@ NOTE: This is Slider style file. All Slider related style included in this file.
     line-height: 16px;
     transform: translateY(10px);
     transition: all 0.4s ease-in-out 0s;
-}
-
-.portfolio:hover .portfolio-title {
-    opacity: 1
-}
-
-.portfolio:hover .portfolio-title h3,
-.portfolio:hover .portfolio-title span {
-    transform: translateY(0px);
 }
 
 .np-button {
@@ -178,10 +167,6 @@ NOTE: This is Slider style file. All Slider related style included in this file.
     top: 0;
 }
 
-.hover-style:hover .portfolio-img:before {
-    opacity: 0.8;
-}
-
 .portfolio-view {
     left: 0;
     position: absolute;
@@ -210,6 +195,20 @@ NOTE: This is Slider style file. All Slider related style included in this file.
     background: #fff;
 }
 
+.hover-style:hover .portfolio-img:before {
+    opacity: 0.8;
+}
+
+.portfolio:hover .portfolio-title {
+    opacity: 1;
+    animation: slide-down 1.0s;
+}
+
+.portfolio:hover .portfolio-title h3,
+.portfolio:hover .portfolio-title span {
+    transform: translateY(0px);
+}
+
 .portfolio:hover .img-poppu {
     opacity: 1;
     transform: translateY(0px);
@@ -235,30 +234,26 @@ NOTE: This is Slider style file. All Slider related style included in this file.
     background: #000;
 }
 
+.portfolio-style-3 .portfolio :hover .portfolio-title {
+    opacity: 1;
+}
+
 .hover-style .img-poppu:after {
     height: 1px;
     width: 30px;
 }
-
 
 /* portfolio-style-3 */
 
 .portfolio-style-3 {}
 
 .portfolio-style-3 .portfolio-title {
-    left: 15px;
-    opacity: 0;
-    padding: 35px 0;
+    width: 200px;
+    letter-spacing: 0.5px;
     position: absolute;
-    right: 0;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: all 0.5s ease 0s;
-}
-
-.portfolio-style-3 .portfolio :hover .portfolio-title {
-    opacity: 1;
+    top: 0;
+    margin-top: 70px;
+    margin-left: 60px;
 }
 
 .portfolio-style-3 .hover-style>a::before {
@@ -266,12 +261,22 @@ NOTE: This is Slider style file. All Slider related style included in this file.
 }
 
 .portfolio-style-3 .portfolio-title h3 {
-    color: #000;
+    font-family: 'DIN Condensed Bold', sans-serif;
+    font-size: 50px;
+    line-height: .9;
 }
 
 .portfolio-style-3 .portfolio-title span {
     color: #000;
+    font-family: 'Adobe Garamond Pro Regular', sans-serif;
+    text-transform: UPPERCASE;
+    width: 80%;
 }
+
+.col-md-8 .portfolio-title span {
+    width: 120%;
+}
+
 
 .portfolio-style-7 .portfolio {
     margin: 0
@@ -291,7 +296,6 @@ NOTE: This is Slider style file. All Slider related style included in this file.
     margin: 0;
     padding: 0;
 }
-
 
 /* portfolio details */
 
@@ -392,4 +396,22 @@ h1.project-title {
 
 a.website {
     color: #888888;
+    position: relative;
+}
+
+a.website::before {
+    background-color: #0e0e0e;
+    bottom: -20px;
+    content: "";
+    height: 1px;
+    opacity: 0;
+    left: 0;
+    position: absolute;
+    transition: bottom .5s,opacity .5s;
+    width: 100%;
+}
+
+a.website:hover::before{
+    bottom:-15px;
+    opacity:1
 }

@@ -200,14 +200,14 @@ NOTE: This is Header style file. All Header related style included in this file.
 /* Main Menu */
 
 .main-menu {
-    margin-top: 20px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
     z-index: 1;
 }
 
-.menu-style-toggle {}
+.menu-style-toggle {
+    position: fixed;
+    top: 40px;
+    right: 120px;
+}
 
 .menu-style-toggle nav {
     opacity: 0;

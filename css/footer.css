@@ -84,12 +84,13 @@ NOTE: This is Footer style file. All footer related style included in this file.
 .social-icon {}
 
 .social-icon a {
-    display: inline-block;
+    float: right;
     height: 30px;
     line-height: 27px;
     margin: 0 5px;
     text-align: center;
     width: 30px;
+    display: flex;
 }
 
 .footer-4 .footer-logo {

@@ -28,27 +28,15 @@ body {
     margin-bottom: 100px;
 }
 
-@font-face {
-    font-family: 'Garamondpremrpro ltdisp';
-    src: url('../fonts/GaramondPremrPro-LtDisp.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
-  }
+
   @font-face {
     font-family: 'AbrilFatface Regular';
     src: url('../fonts/AbrilFatface-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
   }
-  
   @font-face {
-    font-family: 'Garamondpremrpro ltitdisp';
-    src: url('../fonts/GaramondPremrPro-LtItDisp.otf') format('opentype');
-    font-weight: 300;
-    font-style: italic;
-  }
-  @font-face {
-    font-family: 'Acuminpro light';
+    font-family: 'Acuminpro Pro Light';
     src: url('../fonts/acuminpro-light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
@@ -58,6 +46,36 @@ body {
     src: url('../fonts/acuminpro-regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
+  }
+  @font-face {
+    font-family: 'Adobe Garamond Pro Regular';
+    src: url('../fonts/Adobe-Garamond-Pro-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'DIN Condensed Bold';
+    src: url('../fonts/DIN-Condensed-Bold.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'DIN Condensed Web Regular';
+    src: url('../fonts/DIN-Condensed-Web Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Garamondpremrpro ltdisp';
+    src: url('../fonts/GaramondPremrPro-LtDisp.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Garamondpremrpro ltitdisp';
+    src: url('../fonts/GaramondPremrPro-LtItDisp.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
   }
 
 .w-button {
@@ -74,23 +92,24 @@ body {
 
 .vid-main {
     position: relative;
+    display: flex;
     width: 100%;
     height: 100vh;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
+    -webkit-box-pack: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 15px;
 }
 
 .scroll-text {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 4%;
+    bottom: 3%;
     display: block;
     width: 200px;
     margin-right: auto;
@@ -204,17 +223,18 @@ body {
 }
 
 .logo-image {
-    width: 130px;
+    width: 190px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     transition: all 0.3s ease-in-out 0s;
+    position: relative;
+    top: -115px;
 }
 
 .img-wrapper {
     width: 80%;
     height: 55vh;
-    margin-top: 15px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -222,26 +242,28 @@ body {
 
 .main-image-byline p {
     line-height: 100%;
-    font-family: 'AbrilFatface Regular', sans-serif;
+    font-family: 'Adobe Garamond Pro Regular', sans-serif;
     color: #000;
-    margin-bottom: 35px;
+    font-size: 32px;
     width: 600px;
     line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .main-title-box p {
-    font-size: 24px;
+    font-size: 20px;
     margin: 0;
-    font-family: 'Acuminpro regular',sans-serif;
+    font-family: 'Acuminpro Pro Light',sans-serif;
     color: white;
 }
 
 .main-title-box {
     background-color: black;
-    padding-top: 12px;
+    padding-top: 14px;
     margin-left: -90px;
-    padding-bottom: 12px;
-    width: 720px;
+    padding-bottom: 14px;
+    width: 650px;
     padding-left: 90px;
     padding-right: 10px;
     line-height: 1;
@@ -249,21 +271,25 @@ body {
 
 .main-image-byline {
     position: absolute;
-    bottom: 100px;
-    font-size: 42px;
+    bottom: 50px;
+    font-size: 32px;
     width: 600px;
     color: white;
-    margin-left: 25px;
+    margin-left: 45px;
 }
 
 .beauty-main {
-    background-image: linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0)),url("../img/bg/full_image.jpg");
+    background-image: linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0)),url("../img/bg/beauty_main_large.jpg");
     background-repeat: repeat,no-repeat;
     background-size: auto,cover;
     width: 100%;
     height: 100%;
     background-position: 0 0,50% 50%;
     position: relative;
+}
+
+.about-us-area {
+    font-family: 'Adobe Garamond Pro Regular', sans-serif;
 }
 
 .about-button-black {
@@ -311,14 +337,33 @@ body {
 .work-title {
     margin-top: 140px;
     text-align: center;
-    font-size: 22px;
+    font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 20px;
+    font-family: 'DIN Condensed Web Regular', sans-serif;
+    letter-spacing: 2.5px;
+}
+
+.work-title h2 {
+    line-height: 1.0;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.social-icon {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px;
+    text-align: center;
 }
 
 #mission {
     position: relative;
-    margin-top: 125px;
 }
 
 .mission-title {
@@ -326,19 +371,25 @@ body {
     top: 155px;
     left: 50%;
     font-size: 40px;
-    margin-left: -125px;
+    margin-left: -121px;
     text-align: center;
     text-transform: uppercase;
+    font-family: 'DIN Condensed Web Regular', sans-serif;
+    letter-spacing: 6px;
 }
 
+.mission-title h1 {
+    font-size: 40px;
+}
 .mission-text {
     position: absolute;
-    top: 275px;
-    width: 716px;
+    top: 250px;
+    width: 490px;
     left: 50%;
     font-size: 24px;
-    margin-left: -363px;
+    margin-left: -250px;
     text-align: center;
+    font-family: 'Adobe Garamond Pro Regular', sans-serif;
 }
 
 
@@ -433,7 +484,7 @@ body {
 .hover-style {
     display: block;
     position: relative;
-    animation: down-bump 0.4s ease;
+    animation: slide-down 1.0s ;
 }
 
 .hover-style::before {
@@ -444,7 +495,6 @@ body {
     position: absolute;
     transition: all 0.3s ease-in-out 0s;
     width: 100%;
-    animation: up-bump 0.4s ease;
 }
 
 @keyframes up-bump {
@@ -458,10 +508,59 @@ body {
     100% { margin-top: 2em; }
   }
 
+  @keyframes slide-down {
+    0% {
+      -webkit-transform: translate3d(0, -70px, 0);
+      transform: translate3d(0, -70px, 0);
+      visibility: visible;
+    }
+  
+    100% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes slide-Up {
+    0% {
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
+  
+    100% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
 
 .hover-style:hover::before {
     opacity: 0.95;
 }
+
+/* .hover-style {
+    display: block;
+    position: relative;
+}
+
+.hover-style:hover::before {
+    opacity: 0.95;
+}
+
+.hover-style::before {
+    background: #fff none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out 0s;
+    width: 100%;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    animation-name: slideInDown;
+}
+ */
 
 
 /* about */
@@ -715,13 +814,20 @@ body {
 h3.contact {
     padding-top: 32px;
     margin-bottom: 32px;
+    font-family: 'DIN Condensed Web Regular', sans-serif;
+    text-transform: uppercase;
+}
+
+.contact-area-all p {
+    font-family: 'Adobe Garamond Pro Regular', sans-serif;
+    font-size: 16px;
 }
 
 .main-input input {
     background-color: transparent;
     border: 1px solid #ddd;
     color: #666;
-    font-family: "Lato", sans-serif;
+    font-family: 'Adobe Garamond Pro Regular', sans-serif;
     font-size: 14px;
     height: 45px;
     padding-left: 20px;
@@ -731,10 +837,14 @@ h3.contact {
     background: transparent none repeat scroll 0 0;
     border: 1px solid #ddd;
     color: #666;
-    font-family: "Lato", sans-serif;
+    font-family: 'Adobe Garamond Pro Regular', sans-serif;
     height: 150px;
     margin-bottom: 40px;
     padding: 14px 20px;
+}
+.about-us-area {
+    font-family: 'Adobe Garamond Pro Regular', sans-serif;
+    font-size: 16px;
 }
 
 
@@ -775,11 +885,11 @@ input:-webkit-autofill {
 }
 
 #toTop i {
-    background-color: #464646;
-    height: 40px;
-    width: 40px;
+    background-color: #000000;
+    height: 30px;
+    width: 30px;
     color: #fff;
-    line-height: 40px;
+    line-height: 30px;
 }
 
 #toTop i:hover {
@@ -804,4 +914,14 @@ img.lazy {
     display: table-cell;
     vertical-align: bottom;
     float: none;
+}
+
+.item {
+    height: 140px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.item img {
+    width: 140px;
 }
