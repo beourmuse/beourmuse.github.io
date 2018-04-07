@@ -54,6 +54,12 @@ body {
     font-style: normal;
   }
   @font-face {
+    font-family: 'Adobe Garamond W08';
+    src: url('../fonts/AdobeGaramondW08Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
     font-family: 'DIN Condensed Bold';
     src: url('../fonts/DIN-Condensed-Bold.otf') format('opentype');
     font-weight: 400;
@@ -389,7 +395,7 @@ body {
     font-size: 24px;
     margin-left: -250px;
     text-align: center;
-    font-family: 'Adobe Garamond Pro Regular', sans-serif;
+    font-family: 'Adobe Garamond W08', sans-serif;
 }
 
 
