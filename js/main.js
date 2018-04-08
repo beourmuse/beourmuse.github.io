@@ -39,7 +39,7 @@
                     if (item.node.is_video) {
                         return true;
                     }
-                    var postLink = "<a target='_blank' href='https://www.instagram.com/p/"+item.node.shortcode+"'><div class='col-md-4 col-sm-4 col-xs-6 item'><img class='img-responsive center-block' src='" + item.node.thumbnail_src + "'/></div></a>";
+                    var postLink = "<a target='_blank' href='https://www.instagram.com/p/"+item.node.shortcode+"'><div class='col-lg-2 col-md-4 col-sm-4 col-xs-6 item'><img class='img-responsive center-block' src='" + item.node.thumbnail_src + "'/></div></a>";
                     $("#instagram-grid").append(postLink);
                 }
                 i++;
@@ -58,6 +58,7 @@
                 $('.overlay').css("z-index", 1);
                 $('.main-menu nav').removeClass('nav-menu-open');
                 $('.main-menu').removeClass('overlay');
+                $("body").css("overflow", "auto");
             }
             $('.main-menu nav').removeClass('menu-open');
         } else {
@@ -68,6 +69,7 @@
                 $('.overlay').css("width", "100%");
                 $('.overlay').css("opacity", 1);
                 $('.overlay').css("z-index", 100);
+                $("body").css("overflow", "hidden");
             }
         }
     });
@@ -76,6 +78,8 @@
         if ($('.overlay').css("opacity") == 1 && $(document).width() <= 768) {
             $('.overlay').css("opacity", 0);
             $('.overlay').css("width", "0%");
+            $('.overlay').css("z-index", 1);
+            $("body").css("overflow", "auto");
             if ($('.menu-toggle').hasClass('is-active')) {
                 $('.menu-toggle').removeClass('is-active');
             }
@@ -156,11 +160,6 @@
         $("html,body").animate({
             scrollTop: $('#services').offset().top - 200
         }, 1700);
-    });
-
-    // Headline animation
-    $('.headline-selector').animatedHeadline({
-        animationType: 'type'
     });
 
 })(jQuery);
