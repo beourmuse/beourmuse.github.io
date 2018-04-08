@@ -926,6 +926,10 @@
         padding-top: 10px;
     }
 
+    .item {
+        height: auto;
+    }
+
     #toTop {
         right: 5px;
     }

@@ -27,23 +27,25 @@
     });
 
     // Populate the HTML for instagram posts
-    var jqxhr = $.ajax( "https://www.instagram.com/TOTIMEA/?__a=1" ).done(function() {
-    }).fail(function() {
-        //alert( "error" );
-    }).always(function(data) {
-        var items = data.graphql.user.edge_owner_to_timeline_media.edges;
-        var i = 0;
-        $.each(items, function(n, item) {
-            if( i <= 5 ){
-                if (item.node.is_video) {
-                    return true;
+    if ($('#instagram-grid').length) {
+        var jqxhr = $.ajax( "https://www.instagram.com/TOTIMEA/?__a=1" ).done(function() {
+        }).fail(function() {
+            //alert( "error" );
+        }).always(function(data) {
+            var items = data.graphql.user.edge_owner_to_timeline_media.edges;
+            var i = 0;
+            $.each(items, function(n, item) {
+                if( i <= 5 ){
+                    if (item.node.is_video) {
+                        return true;
+                    }
+                    var postLink = "<a target='_blank' href='https://www.instagram.com/p/"+item.node.shortcode+"'><div class='col-md-4 col-sm-4 col-xs-6 item'><img class='img-responsive center-block' src='" + item.node.thumbnail_src + "'/></div></a>";
+                    $("#instagram-grid").append(postLink);
                 }
-                var postLink = "<a target='_blank' href='https://www.instagram.com/p/"+item.node.shortcode+"'><div class='col-md-4 col-sm-4 col-xs-4 item'><img class='img-responsive center-block' src='" + item.node.thumbnail_src + "'/></div></a>";
-                $("#instagram-grid").append(postLink);
-            }
-            i++;
+                i++;
+            });
         });
-    });
+    }
 
     /*--
     menu-toggle
@@ -124,20 +126,17 @@
     ---------------------------- */
     $(window).on('scroll', function() {
         $(".scroll-text").fadeOut();
-        console.log('scrollTop ' + $(window).scrollTop());
-        console.log('width ' + $(document).width());
-        console.log('height ' + $(document).height());
         if ($(window).scrollTop() > 200) {
-            $(".logo").fadeIn();
-            $(".logo-line").fadeIn();
-            if ($(document).height() >= 1200) {
-                $("#toTop").fadeIn();
-            }
-        } else {
             if ($(document).width() <= 480) {
                 $(".logo").fadeOut();
                 $(".logo-line").fadeOut();
             }
+            if ($(document).height() >= 1200) {
+                $("#toTop").fadeIn();
+            }
+        } else {
+            $(".logo").fadeIn();
+            $(".logo-line").fadeIn();
             $("#toTop").fadeOut();
         }
     });
