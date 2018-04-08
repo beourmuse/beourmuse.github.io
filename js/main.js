@@ -3,15 +3,6 @@
 
     $('.menu>li').slice(-2).addClass('last-elements');
 
-    // $(window).on('scroll', function() {
-    //     var scroll = $(window).scrollTop();
-    //     if (scroll < 200) {
-    //         $(".header-sticky").removeClass("sticky");
-    //     } else {
-    //         $(".header-sticky").addClass("sticky");
-    //     }
-    // });
-
     $('.grid').imagesLoaded(function() {
 
         // filter items on button click
@@ -133,7 +124,7 @@
     ---------------------------- */
     $(window).on('scroll', function() {
         $(".scroll-text").fadeOut();
-        if ($(window).scrollTop() > 200) {
+        if ($(window).scrollTop() > 200 && $(document).height() >= 1200) {
             $("#toTop").fadeIn();
         } else {
             $("#toTop").fadeOut();

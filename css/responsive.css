@@ -846,7 +846,7 @@
     }
 
     .main-image-byline p {
-        font-size: 17px;
+        font-size: 14px;
         width: 180px;
         margin-bottom: 14px;
     }
@@ -922,12 +922,11 @@
         padding-top: 10px;
     }
 
-    button.submit {
-        margin: 0 auto;
-        display: block;
-    }
-
     #toTop {
         right: 5px;
+    }
+
+    .scroll-text {
+        bottom: 10%;
     }
 }
