@@ -124,9 +124,20 @@
     ---------------------------- */
     $(window).on('scroll', function() {
         $(".scroll-text").fadeOut();
-        if ($(window).scrollTop() > 200 && $(document).height() >= 1200) {
-            $("#toTop").fadeIn();
+        console.log('scrollTop ' + $(window).scrollTop());
+        console.log('width ' + $(document).width());
+        console.log('height ' + $(document).height());
+        if ($(window).scrollTop() > 200) {
+            $(".logo").fadeIn();
+            $(".logo-line").fadeIn();
+            if ($(document).height() >= 1200) {
+                $("#toTop").fadeIn();
+            }
         } else {
+            if ($(document).width() <= 480) {
+                $(".logo").fadeOut();
+                $(".logo-line").fadeOut();
+            }
             $("#toTop").fadeOut();
         }
     });

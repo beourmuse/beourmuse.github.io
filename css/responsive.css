@@ -655,6 +655,7 @@
         position: fixed;
         top: 0;
         left: 0;
+        width: 0%;
     }
     .main-menu.mean-menu.menu-style-toggle.text-right {
         float: none;
@@ -892,7 +893,9 @@
         width: 100%;
     }
     .portfolio-menu button {
-        font-size: 8.1px;
+        font-size: 11px;
+        letter-spacing: 1px;
+        margin: 0 4px;
     }
     .section-title {
         margin-bottom: 20px;
@@ -917,6 +920,7 @@
         margin-left: 15%;
         margin-right: 15%;
         top: 150px;
+        color: #171717;
     }
     .portfolio {
         padding-top: 10px;
@@ -928,5 +932,9 @@
 
     .scroll-text {
         bottom: 10%;
+    }
+
+    .main-menu ul li a {
+        font-family: "Acuminpro Pro Light", sans-serif;
     }
 }
