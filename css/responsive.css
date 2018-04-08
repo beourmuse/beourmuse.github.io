@@ -903,10 +903,14 @@
     .single-service {
         margin-bottom: 20px;
         height: 260px;
-        padding: 70px 23px;
+        width: 260px;
+        padding: 30px 10px;
     }
-
+    .single-service > h3 {
+        font-size: 17px;
+    }
     .single-service p {
+        font-size: 15px;
         margin: 20px;
     }
     .work-title {
