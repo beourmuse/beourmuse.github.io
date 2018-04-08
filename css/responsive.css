@@ -961,4 +961,7 @@
         font-size: 15px;
         margin: 20px;
     }
+    .portfolio-menu button {
+        font-size: 10px;
+    }
 }
