@@ -5,6 +5,11 @@ NOTE: This is Slider style file. All Slider related style included in this file.
 
 --------------------------------------*/
 
+p.project-subtitle {
+    text-transform: UPPERCASE;
+    font-family: 'Adobe Garamond W08', sans-serif;
+}
+
 .portfolio img {
     width: 100%;
 }
@@ -97,18 +102,19 @@ NOTE: This is Slider style file. All Slider related style included in this file.
 }
 
 .np-button a {
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     display: inline-block;
     font-size: 14px;
     font-weight: 600;
     padding: 8px 25px;
     text-transform: uppercase;
+    font-family: 'Acuminpro Pro Light', sans-serif;
 }
 
 .np-button a:hover {
-    background: #444;
+    background: #000000;
     color: #fff;
-    border-color: #444
+    border-color: #000000;
 }
 
 .title-style-1 {
@@ -378,7 +384,8 @@ NOTE: This is Slider style file. All Slider related style included in this file.
     font-size: 16px;
     line-height: 150%;
     text-align: center;
-    color: #999999
+    color: #999999;
+    font-family: 'Adobe Garamond W08', sans-serif;
 }
 
 .portfolio-details h4 {
@@ -397,10 +404,12 @@ h1.project-title {
 a.website {
     color: #888888;
     position: relative;
+    font-family: 'Acuminpro Pro Light',sans-serif;
+    text-transform: uppercase;
 }
 
 a.website::before {
-    background-color: #0e0e0e;
+    background-color: #888888;
     bottom: -20px;
     content: "";
     height: 1px;

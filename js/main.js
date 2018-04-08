@@ -47,7 +47,7 @@
                 if (item.node.is_video) {
                     return true;
                 }
-                var postLink = "<a target='_blank' href='https://www.instagram.com/p/"+item.node.shortcode+"'><div class='col-md-2 col-sm-4 col-xs-4 item'><img class='img-responsive center-block' src='" + item.node.thumbnail_src + "'/></div></a>";
+                var postLink = "<a target='_blank' href='https://www.instagram.com/p/"+item.node.shortcode+"'><div class='col-md-4 col-sm-4 col-xs-4 item'><img class='img-responsive center-block' src='" + item.node.thumbnail_src + "'/></div></a>";
                 $("#instagram-grid").append(postLink);
             }
             i++;

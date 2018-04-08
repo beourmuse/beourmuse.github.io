@@ -5,7 +5,28 @@ h2.page-title {
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
+  padding-top: 32px;
+  margin-bottom: 32px;
 }
+
+h2.contact {
+  padding-top: 32px;
+  color: #000000;
+  margin-bottom: 32px;
+  font-family: 'DIN Condensed Web Regular', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+h3.contact {
+  padding-top: 32px;
+  margin-bottom: 32px;
+  font-family: 'DIN Condensed Web Regular', sans-serif;
+  text-transform: uppercase;
+}
+
 .breadcrumbs li {
     display: inline-block;
     font-family: 'Raleway', sans-serif;

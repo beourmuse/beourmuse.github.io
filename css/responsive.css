@@ -69,8 +69,8 @@
         margin-left: 25px;
     }
     .main-image-byline p {
-        width: 400px;
-        font-size: 28px;
+        width: 500px;
+        font-size: 30px;
     }
     
     .main-title-box {
@@ -82,6 +82,7 @@
         font-size: 19px;
     }    
     .beauty-main {
+        height: 90%;
         background-image: linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0)),url("../img/bg/beauty_main_large.jpg");
     }
     .container {
@@ -89,6 +90,29 @@
     }
     .scroll-text {
         bottom: 8%;
+    }
+    .logo-image {
+        width: 200px;
+    }
+    .single-service {
+        padding: 50px 30px;
+        height: 270px;
+        width: 270px;
+    }
+    .single-service p {
+        margin: 5px;
+    }
+    .item {
+        height: 240px;
+    }
+    .item img {
+        width: 200px;
+    }
+    .ptb-100 {
+        padding: 65px 0;
+    }
+    .ptb-90 {
+        padding: 60px 0;
     }
 }
 
@@ -216,7 +240,6 @@
     .main-image-byline p {
         width: 350px;
         font-size: 20px;
-        margin-bottom: 20px;
     }
     .main-title-box {
         width: 450px;
@@ -416,11 +439,12 @@
     }
     .single-service {
         margin-bottom: 0px;
-        padding: 30px 23px;
-        height: 245px;
+        padding: 30px 20px;
+        height: 200px;
+        width: 200px;
     }
     .single-service p {
-        font-size: 13px;
+        font-size: 11px;
         margin: 5px;
     }
     .single-service > h3 {
@@ -458,12 +482,6 @@
     }
     .pb-105 {
         padding-bottom: 50px;
-    }
-    .breadcrumbs-area.ptb-100 {
-        padding: 50px 0;
-    }
-    .pattern-bread h2.page-title {
-        float: inherit;
     }
     .pattern-bread .breadcrumbs>ul {
         float: inherit;
@@ -528,17 +546,19 @@
         text-align: center;
         position: relative;
         right: 0;
-        bottom: 5px;
+        bottom: -10px;
     }
     .site-by {
         position: relative;
         text-align: center;
         left: 0;
-        bottom: 10px;
+        bottom: -5px;
     }
     .social-icon {
-        margin-top: 15px;
+        margin-top: 25px;
         text-align: center;
+        bottom: -10px;
+        position: relative;
     }
     .about-minimal {
         margin-bottom: 40px;
@@ -624,7 +644,7 @@
         margin-left: 0px;
     }
     .main-menu ul li a {
-        font-size: 25px;
+        font-size: 35px;
         opacity: 1;
     }
     .menu-style-toggle nav {
@@ -661,7 +681,7 @@
     }
     .main-image-byline p {
         width: 270px;
-        font-size: 20px;
+        font-size: 18px;
     }
     .instagram {
         right: -25px;
@@ -685,9 +705,10 @@
     .scroll-text {
         bottom: 15%;
     }
+    .contact-area-all {
+        margin-top: 40px;
+    }
 }
-
-/* Large Mobile :480px. */
 
 @media only screen and (max-width: 768px) {
     body {
@@ -782,6 +803,22 @@
         margin-bottom: 40px;
         width: 85%;
     }
+    .logo-image {
+        width: 160px;
+        top: -100px;
+    }
+    .item {
+        height: 200px;
+    }
+    .item img {
+        width: 200px;
+    }
+    .contact-me {
+        display: none;
+    }
+    h3.contact {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -809,17 +846,20 @@
     }
 
     .main-image-byline p {
-        font-size: 12px;
+        font-size: 17px;
         width: 180px;
         margin-bottom: 14px;
     }
 
     .main-title-box {
-        width: 290px;
+        width: 240px;
+        padding-left: 27px;
+        margin-left: -25px;
     }
     .main-title-box p {
         width: 270px;
         margin-bottom: 0;
+        font-size: 10px;
     }
     .container {
         padding-right: 40px;

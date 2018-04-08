@@ -313,7 +313,7 @@ body {
 .about-line-black {
     position: fixed;
     left: 52px;
-    top: 200px;
+    top: 215px;
     z-index: 99;
     width: 1px;
     height: 40px;
@@ -815,21 +815,13 @@ body {
 }
 
 
-/*----- contact ------*/
-
-h3.contact {
-    padding-top: 32px;
-    margin-bottom: 32px;
-    font-family: 'DIN Condensed Web Regular', sans-serif;
-    text-transform: uppercase;
-}
-
 .contact-area-all p {
-    font-family: 'Adobe Garamond Pro Regular', sans-serif;
+    font-family: 'Adobe Garamond W08', sans-serif
     font-size: 16px;
 }
 
 .main-input input {
+    -webkit-appearance: none;
     background-color: transparent;
     border: 1px solid #ddd;
     color: #666;
