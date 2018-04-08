@@ -101,6 +101,10 @@
     }
     .single-service p {
         margin: 5px;
+        font-size: 15px;
+    }
+    .single-service > h3 {
+        font-size: 14px;
     }
     .item {
         height: 240px;
@@ -259,12 +263,17 @@
     }
     .single-service {
         margin-bottom: 0px;
-        padding: 30px 23px;
-        height: 245px;
+        padding: 30px 20px;
+        height: 200px;
+        width: 200px;
     }
     .single-service p {
-        font-size: 13px;
+        font-size: 11px;
         margin: 5px;
+    }
+    .single-service > h3 {
+        height: 28px;
+        font-size: 14px;
     }
     .service-wrapper {
         padding: 0 7px;
@@ -292,9 +301,6 @@
         position: relative;
     }
 }
-
-
-/* small mobile :320px. */
 
 @media (max-width: 768px) {
     body {
@@ -453,6 +459,7 @@
     }
     .single-service > h3 {
         height: 28px;
+        font-size: 14px;
     }
     
     .portfolio-right-bar-top.pb-100,
@@ -824,9 +831,7 @@
     h3.contact {
         font-size: 20px;
     }
-}
 
-@media only screen and (max-width: 480px) {
     .footer-bottom {
         padding: 0 0;
     }
@@ -906,16 +911,6 @@
     }
     .single-service {
         margin-bottom: 20px;
-        height: 260px;
-        width: 260px;
-        padding: 30px 10px;
-    }
-    .single-service > h3 {
-        font-size: 17px;
-    }
-    .single-service p {
-        font-size: 15px;
-        margin: 20px;
     }
     .work-title {
         margin-top: 50px;
@@ -949,5 +944,21 @@
 
     .main-menu ul li a {
         font-family: "Acuminpro Pro Light", sans-serif;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .single-service {
+        margin-bottom: 20px;
+        height: 260px;
+        width: 260px;
+        padding: 30px 10px;
+    }
+    .single-service > h3 {
+        font-size: 17px;
+    }
+    .single-service p {
+        font-size: 15px;
+        margin: 20px;
     }
 }
