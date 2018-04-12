@@ -28,11 +28,11 @@
 
     // Populate the HTML for instagram posts
     if ($('#instagram-grid').length) {
-        var jqxhr = $.ajax( "https://www.instagram.com/TOTIMEA/?__a=1" ).done(function() {
+        var jqxhr = $.ajax( "https://www.instagram.com/graphql/query/?query_id=17888483320059182&id=1460257412&first=10" ).done(function() {
         }).fail(function() {
             //alert( "error" );
-        }).always(function(data) {
-            var items = data.graphql.user.edge_owner_to_timeline_media.edges;
+        }).always(function(json) {
+            var items = json.data.user.edge_owner_to_timeline_media.edges;
             var i = 0;
             $.each(items, function(n, item) {
                 if( i <= 5 ){
