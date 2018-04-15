@@ -27,25 +27,25 @@
     });
 
     // Populate the HTML for instagram posts
-    if ($('#instagram-grid').length) {
-        var jqxhr = $.ajax( "https://www.instagram.com/graphql/query/?query_id=17888483320059182&id=1460257412&first=10" ).done(function() {
-        }).fail(function() {
-            //alert( "error" );
-        }).always(function(json) {
-            var items = json.data.user.edge_owner_to_timeline_media.edges;
-            var i = 0;
-            $.each(items, function(n, item) {
-                if( i <= 5 ){
-                    if (item.node.is_video) {
-                        return true;
-                    }
-                    var postLink = "<a target='_blank' href='https://www.instagram.com/p/"+item.node.shortcode+"'><div class='col-lg-2 col-md-4 col-sm-4 col-xs-6 item'><img class='img-responsive center-block' src='" + item.node.thumbnail_src + "'/></div></a>";
-                    $("#instagram-grid").append(postLink);
-                }
-                i++;
-            });
-        });
-    }
+    // if ($('#instagram-grid').length) {
+    //     var jqxhr = $.ajax( "https://www.instagram.com/graphql/query/?query_id=17888483320059182&id=1460257412&first=10" ).done(function() {
+    //     }).fail(function() {
+    //         //alert( "error" );
+    //     }).always(function(json) {
+    //         var items = json.data.user.edge_owner_to_timeline_media.edges;
+    //         var i = 0;
+    //         $.each(items, function(n, item) {
+    //             if( i <= 5 ){
+    //                 if (item.node.is_video) {
+    //                     return true;
+    //                 }
+    //                 var postLink = "<a target='_blank' href='https://www.instagram.com/p/"+item.node.shortcode+"'><div class='col-lg-2 col-md-4 col-sm-4 col-xs-6 item'><img class='img-responsive center-block' src='" + item.node.thumbnail_src + "'/></div></a>";
+    //                 $("#instagram-grid").append(postLink);
+    //             }
+    //             i++;
+    //         });
+    //     });
+    // }
 
     /*--
     menu-toggle
