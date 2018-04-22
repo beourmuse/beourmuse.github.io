@@ -408,6 +408,13 @@ a.website {
     text-transform: uppercase;
 }
 
+p.note {
+    color: #888888;
+    position: relative;
+    font-family: 'Acuminpro Pro Light',sans-serif;
+    text-transform: uppercase;
+}
+
 a.website::before {
     background-color: #888888;
     bottom: -20px;
